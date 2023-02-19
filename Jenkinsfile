@@ -3,7 +3,7 @@ agent any
    stages {
        stage('Build') {
          steps {
-           sh 'g++ try.cpp'
+           sh 'g++ try.cpp -o outpt'
            build 'PES1UG20CS696-1'
            echo 'Build Stage Successful'
          }
